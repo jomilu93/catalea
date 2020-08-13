@@ -32,6 +32,10 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
 
+#ecommerce
+
+gem 'solidus'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
