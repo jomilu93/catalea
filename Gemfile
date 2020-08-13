@@ -35,6 +35,7 @@ gem 'simple_form'
 #ecommerce
 
 gem 'solidus'
+gem 'solidus_auth_devise'
 
 group :development, :test do
   gem 'pry-byebug'
