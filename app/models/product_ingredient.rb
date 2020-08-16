@@ -1,4 +1,4 @@
 class ProductIngredient < ApplicationRecord
-  belongs_to :raw_material
+  has_one :raw_material
   belongs_to :product
 end

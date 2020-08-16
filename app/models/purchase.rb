@@ -1,3 +1,3 @@
 class Purchase < ApplicationRecord
-  belongs_to :raw_material
+  has_one :raw_material
 end

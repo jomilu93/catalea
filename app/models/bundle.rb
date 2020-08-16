@@ -1,4 +1,4 @@
 class Bundle < ApplicationRecord
-  belongs_to :product
-  belongs_to :packaging
+  has_many :products
+  has_one :packaging
 end
