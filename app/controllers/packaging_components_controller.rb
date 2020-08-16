@@ -1,0 +1,2 @@
+class PackagingComponentsController < ApplicationController
+end
