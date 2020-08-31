@@ -1,0 +1,12 @@
+<div class="container d-flex flex-row align-items-center">
+
+  <%= cl_image_tag @product.photos.first.key, height: 250, width: 370, crop: :fill%>
+
+  <div class="container d-flex flex-column align-items-center">
+    <%= @product.name %>
+    <%= @product.weight %>
+    <%= @product.unit_cost %>
+  </div>
+
+</div>
+

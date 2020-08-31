@@ -1,5 +1,5 @@
 class Production < ApplicationRecord
-  has_one :product
+  has_many :product
 
-  validates :date, :quantity, :product, presence: true
+  validates :date, :quantity, presence: true
 end

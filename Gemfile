@@ -36,7 +36,7 @@ gem 'simple_form'
 gem 'devise'
 
 #photo_cloud_storage
-gem 'cloudinary', '~> 1.12.0'
+gem 'cloudinary', '~> 1.16.0'
 
 group :development, :test do
   gem 'pry-byebug'

@@ -5,5 +5,4 @@ class Product < ApplicationRecord
   has_many_attached :photos
 
   validates :name, :weight, :unit_cost, presence: true
-
 end
