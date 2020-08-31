@@ -1,0 +1,6 @@
+<%= simple_form_for (@production) do |f| %>
+  <%= f.input :date, as: :string, input_html: {type: :date} %>
+  <%= f.input :quantity %>
+  <%= f.association :product, as: :radio_buttons %>
+  <%= f.button :submit %>
+<% end %>
