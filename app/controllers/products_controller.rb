@@ -1,5 +1,4 @@
 class ProductsController < ApplicationController
-
   def home
     @products = Product.all
   end
@@ -26,12 +25,13 @@ class ProductsController < ApplicationController
     end
   end
 
-    private
+  private
 
   def product_params
     params[:name] = params[:product][:name]
     params[:weight] = params[:product][:weight]
     params[:unit_cost] = params[:product][:unit_cost]
-    params.permit(:name, :weight, :unit_cost, photos: [])
+    params[:photos] = params[:product][:photos]
+    params.require(:product).permit(:name, :weight, :unit_cost, photos: [])
   end
 end

@@ -2,6 +2,5 @@
 <%= @product.weight %>
 <%= @product.unit_cost %>
 
-<% @product.photos.each do |image|%>
-  <%= cl_image_tag image.key, height: 250, width: 370, crop: :fill%>
-<%end%>
+<%= cl_image_tag @product.photos.first.key, height: 250, width: 370, crop: :fill%>
+
